@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SyncUp — Pitch Deck</title>
+<meta name="description" content="An agent that understands your company and brings verified people with real proof of work, not AI-optimized PDFs.">
+<link rel="icon" href="public/assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Download button -->
+<a class="download-btn" href="public/SyncUp-Pitch-Deck-GENESIS.pdf" download>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+  <span>Download PDF</span>
+</a>
+
+<!-- Slide counter -->
+<div class="slide-counter"><span id="current-slide">01</span> / <span id="total-slides">15</span></div>
+
+<!-- Nav dots -->
+<nav class="dots" aria-label="Slide navigation">
+  <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+  <button class="dot" data-index="1" aria-label="Slide 2"></button>
+  <button class="dot" data-index="2" aria-label="Slide 3"></button>
+  <button class="dot" data-index="3" aria-label="Slide 4"></button>
+  <button class="dot" data-index="4" aria-label="Slide 5"></button>
+  <button class="dot" data-index="5" aria-label="Slide 6"></button>
+  <button class="dot" data-index="6" aria-label="Slide 7"></button>
+  <button class="dot" data-index="7" aria-label="Slide 8"></button>
+  <button class="dot" data-index="8" aria-label="Slide 9"></button>
+  <button class="dot" data-index="9" aria-label="Slide 10"></button>
+  <button class="dot" data-index="10" aria-label="Slide 11"></button>
+  <button class="dot" data-index="11" aria-label="Slide 12"></button>
+  <button class="dot" data-index="12" aria-label="Slide 13"></button>
+  <button class="dot" data-index="13" aria-label="Slide 14"></button>
+  <button class="dot" data-index="14" aria-label="Slide 15"></button>
+</nav>
+
+<!-- Prev / Next arrows -->
+<button class="nav-arrow nav-up" aria-label="Previous slide">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<button class="nav-arrow nav-down" aria-label="Next slide">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+</button>
+
+<main class="deck">
+
+  <!-- SLIDE 1: Cover -->
+  <section class="slide slide-white" id="slide-1">
+    <div class="slide-inner cover">
+      <img class="logo-mark" src="public/assets/logo-mark.png" alt="SyncUp logo">
+      <h1 class="brand-title">SyncUp</h1>
+      <p class="cover-subtitle">An agent that understands your company and brings verified people
+        with real proof of work, <span class="text-strong">not AI-optimized PDFs.</span></p>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: The Insight -->
+  <section class="slide slide-gray" id="slide-2">
+    <div class="slide-inner">
+      <span class="pill">The Insight</span>
+      <h1 class="h1">Everyone is building AI to screen faster.<br><span class="text-muted-accent">That's the wrong problem.</span></h1>
+      <p class="lede">Faster screening of fake applications is just faster noise. The only way out isn't a better
+        filter. It's changing <span class="text-strong">what gets screened</span>: verified proof instead of self-reported claims,
+        and an agent that does the work on top of it.</p>
+      <div class="banner-black">The whole market is optimizing the wrong variable.</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: The Problem -->
+  <section class="slide slide-white" id="slide-3">
+    <div class="slide-inner">
+      <span class="pill">The Problem</span>
+      <h1 class="h1">Gartner says 1 in 4 job applications will be faked using AI <span class="text-muted-accent">by 2028.</span></h1>
+      <p class="lede-sm">100% of them will be optimized to match the exact job description.</p>
+      <div class="grid-3">
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></span>
+          <h3>Recruiters can't tell who's real</h3>
+          <p>Every application reads as equally qualified, because it was written to match the job description word for word.</p>
+        </div>
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          <h3>No verified identity</h3>
+          <p>A resume or LinkedIn profile confirms nothing. Anyone can claim any degree, any role, any skill.</p>
+        </div>
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+          <h3>The cost lands on both sides</h3>
+          <p>Recruiters lose hours screening inflated resumes and chasing candidates who don't qualify. Job seekers send dozens of applications before a single real response.</p>
+        </div>
+      </div>
+      <p class="footline">The system rewards a <span class="strike">good resume</span>, not <span class="underline">real work</span>.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: The Solution -->
+  <section class="slide slide-gray" id="slide-4">
+    <div class="slide-inner">
+      <span class="pill">The Solution</span>
+      <h1 class="h1">SyncUp is an agent that does the hiring work<br>and gets smarter with every hire.</h1>
+      <p class="lede">For companies, an agent that sources, screens, and schedules. For job seekers, a
+        verified profile that gets them found. <span class="text-strong">Each side makes the other stronger.</span></p>
+      <div class="grid-3 steps">
+        <div class="card step-card">
+          <span class="step-num">1</span>
+          <h3>Sources candidates</h3>
+          <p>From SyncUp's verified pool and a database of 1 billion-plus profiles</p>
+        </div>
+        <span class="step-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        <div class="card step-card">
+          <span class="step-num">2</span>
+          <h3>Screens for fit</h3>
+          <p>Against your actual hiring bar, not a generic score</p>
+        </div>
+        <span class="step-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        <div class="card step-card">
+          <span class="step-num">3</span>
+          <h3>Schedules interviews</h3>
+          <p>Handles the back-and-forth. You make the call.</p>
+        </div>
+      </div>
+      <div class="badge-row">
+        <span class="badge-outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Identity Verified</span>
+        <span class="badge-outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Education Verified</span>
+        <span class="badge-outline muted"><span class="dot-mark"></span> Experience Verified (in progress)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: For Job Seekers -->
+  <section class="slide slide-white" id="slide-5">
+    <div class="slide-inner">
+      <span class="pill">For Job Seekers</span>
+      <h1 class="h1">A profile that proves what you can do,<br><span class="text-muted-accent">not a PDF that claims it.</span></h1>
+      <div class="grid-3">
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>Verified once, trusted everywhere</h3>
+          <p>Identity and education verified through DigiLocker, carried as a credential recruiters actually believe.</p>
+        </div>
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+          <h3>Show real work, not a resume</h3>
+          <p>Proof of work and demonstrated skills front and center, so what you've built gets seen instead of buried in a pile.</p>
+        </div>
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></span>
+          <h3>Apply once, track everywhere</h3>
+          <p>Apply to multiple roles with one verified profile, and track every application, on SyncUp or any other platform, from one dashboard.</p>
+        </div>
+      </div>
+      <p class="footline">Verified job seekers get found by the agent, <span class="text-strong">not lost in the pile.</span></p>
+    </div>
+  </section>
+
+  <!-- SLIDE 6: The Moat -->
+  <section class="slide slide-white" id="slide-6">
+    <div class="slide-inner">
+      <span class="pill">The Moat</span>
+      <h1 class="h1">This isn't a feature they can add.<br><span class="text-muted-accent">It's a model they can't switch to.</span></h1>
+      <div class="grid-3">
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/><line x1="9" y1="22" x2="9" y2="18"/><line x1="15" y1="22" x2="15" y2="18"/></svg></span>
+          <h3>LinkedIn &amp; Naukri</h3>
+          <p>Built on self-reported profiles and ad/listing revenue. Verification would cannibalize the model they monetize.</p>
+        </div>
+        <div class="card">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+          <h3>Juicebox, Fabric, Weekday</h3>
+          <p>Built on scraped and aggregated data. You can't verify what you scraped without consent. Their data advantage is their verification ceiling.</p>
+        </div>
+        <div class="card card-black">
+          <span class="icon-wrap icon-wrap-white"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3>SyncUp</h3>
+          <p>Verification is the foundation, not a layer. Every hire adds to a network of who verified whom that no competitor can copy by launching tomorrow.</p>
+        </div>
+      </div>
+      <p class="footline">Data is not the moat. Everyone rents the same profiles.<br><span class="text-strong">The accumulated network of verified relationships is.</span></p>
+    </div>
+  </section>
+
+  <!-- SLIDE 7: Traction -->
+  <section class="slide slide-gray" id="slide-7">
+    <div class="slide-inner">
+      <span class="pill">Traction</span>
+      <h1 class="h1">Pre-revenue by design. <span class="text-muted-accent">Not pre-proof.</span></h1>
+      <div class="grid-4 stats">
+        <div class="card stat-card"><div class="stat-num">120,000+</div><div class="stat-label">job applications delivered to companies</div></div>
+        <div class="card stat-card"><div class="stat-num">35,000+</div><div class="stat-label">job seekers joined in 60 days</div></div>
+        <div class="card stat-card"><div class="stat-num">30+</div><div class="stat-label">companies have used the platform</div></div>
+        <div class="card stat-card"><div class="stat-num">₹0</div><div class="stat-label">marketing spend</div></div>
+      </div>
+      <p class="footline">We kept it free through beta to prove the loop works at volume. <span class="text-strong">It does.</span></p>
+      <p class="lede-sm small-top">Supply came first, organically. Companies are the demand side we monetize at launch. That's the order every marketplace that worked got right.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 8: Logos -->
+  <section class="slide slide-white" id="slide-8">
+    <div class="slide-inner">
+      <h1 class="h1 center-only">Trusted by teams across industries</h1>
+      <p class="lede-sm">Every company below has used SyncUp.</p>
+      <div class="logo-grid">
+        <div class="logo-card"><img src="public/assets/logo-unacademy.png" alt="Unacademy"></div>
+        <div class="logo-card"><img src="public/assets/logo-eleven-eleven.png" alt="Apartment Eleven Eleven"></div>
+        <div class="logo-card"><img src="public/assets/logo-bhanzu.png" alt="Bhanzu"></div>
+        <div class="logo-card"><img src="public/assets/logo-pilgrim.png" alt="Pilgrim"></div>
+        <div class="logo-card"><img src="public/assets/logo-fitelo.png" alt="Fitelo"></div>
+        <div class="logo-card"><img src="public/assets/logo-whatfix.png" alt="Whatfix"></div>
+        <div class="logo-card"><img src="public/assets/logo-frido.png" alt="Frido"></div>
+        <div class="logo-card"><img src="public/assets/logo-mcdonalds.png" alt="McDonald's"></div>
+        <div class="logo-card"><img src="public/assets/logo-razorpay.png" alt="Razorpay"></div>
+        <div class="logo-card"><img src="public/assets/logo-zepto.png" alt="Zepto"></div>
+        <div class="logo-card"><img src="public/assets/logo-marketsandmarkets.png" alt="MarketsandMarkets"></div>
+        <div class="logo-card"><img src="public/assets/logo-leucine.png" alt="Leucine"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 9: Distribution -->
+  <section class="slide slide-gray" id="slide-9">
+    <div class="slide-inner">
+      <span class="pill">Distribution</span>
+      <h1 class="h1">We don't have to find our customers<br>one at a time.</h1>
+      <div class="grid-2">
+        <div class="card">
+          <span class="icon-wrap icon-wrap-black"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 12l2.5 2.5a1.7 1.7 0 0 0 2.4 0 1.7 1.7 0 0 0 0-2.4L11 10"/><path d="M11 10l2 2a1.7 1.7 0 0 0 2.4 0 1.7 1.7 0 0 0 0-2.4L13 7.2a3 3 0 0 0-4.2 0L7 9"/><path d="M2 10l4-4 3.5 3.5"/><path d="M22 10l-4-4-2 2"/><path d="M2 10l3 3.5c.9 1 2.4 1 3.4.2"/><path d="M22 10l-3 4c-.8 1-2.3 1.2-3.3.4"/></svg></span>
+          <div class="big-num">2,000+</div>
+          <h3>Founders community partnership</h3>
+          <p>They're white-labeling SyncUp's offering on their own site. Every founder hiring is a potential customer, reached through a channel we don't pay for.</p>
+        </div>
+        <div class="card">
+          <span class="icon-wrap icon-wrap-black"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+          <div class="big-num">1 billion+</div>
+          <h3>Profile reach</h3>
+          <p>The agent isn't limited to our own pool. It sources across a database of over 1 billion profiles, so supply is never the constraint.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 10: Business Model -->
+  <section class="slide slide-white" id="slide-10">
+    <div class="slide-inner">
+      <span class="pill">Business Model</span>
+      <h1 class="h1">Four ways we make money,<br><span class="text-muted-accent">two of them live today.</span></h1>
+      <div class="grid-4 bm-grid">
+        <div class="card card-black bm-card">
+          <span class="tag-badge tag-badge-white">PRIMARY</span>
+          <span class="bm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+          <h3>Agent for Recruiters</h3>
+          <p>Subscription and contingency access to the recruiting agent. Paid model activates at launch.</p>
+          <hr class="bm-divider">
+          <div class="bm-target-label">TARGET</div>
+          <div class="bm-target">50 paid clients signed before launch</div>
+        </div>
+        <div class="card bm-card">
+          <span class="tag-badge tag-badge-black"><span class="dot-mark white"></span>LIVE TODAY</span>
+          <span class="bm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>
+          <h3>Personalised Recruitment Service</h3>
+          <p>SyncUp acts as the company's recruitment team, handling hiring end to end: sourcing, screening, coordination, and closing. Live today for existing accounts.</p>
+        </div>
+        <div class="card bm-card">
+          <span class="tag-badge tag-badge-gray">LATER</span>
+          <span class="bm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
+          <h3>Career Diagnostics</h3>
+          <p>For candidates.</p>
+        </div>
+        <div class="card bm-card">
+          <span class="tag-badge tag-badge-gray">LATER</span>
+          <span class="bm-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></span>
+          <h3>Network Ads</h3>
+          <p>Once the network reaches scale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 11: Roadmap -->
+  <section class="slide slide-gray" id="slide-11">
+    <div class="slide-inner">
+      <h1 class="h1 center-only">Roadmap</h1>
+      <div class="grid-4 roadmap-grid">
+        <div class="card rm-card">
+          <span class="tag-badge tag-badge-black"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>DONE</span>
+          <h3 class="rm-title">Pre-Beta</h3>
+          <div class="rm-date">June – Aug 2026</div>
+          <ul class="rm-list">
+            <li>30+ brands</li>
+            <li>30,000+ users</li>
+          </ul>
+        </div>
+        <div class="card rm-card card-black">
+          <span class="tag-badge tag-badge-white"><svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="6 4 20 12 6 20"/></svg>IN PROGRESS</span>
+          <h3 class="rm-title">Beta</h3>
+          <div class="rm-date">Sept 15, 2026</div>
+          <ul class="rm-list">
+            <li>Agent live for recruiters</li>
+            <li>Verification at scale</li>
+            <li>Paid clients being signed</li>
+          </ul>
+        </div>
+        <div class="card rm-card">
+          <span class="tag-badge tag-badge-gray"><span class="ring-mark"></span>UPCOMING</span>
+          <h3 class="rm-title">Launch</h3>
+          <div class="rm-date">Jan 27, 2027</div>
+          <ul class="rm-list">
+            <li>Paid model activates</li>
+            <li>50 paid clients committed pre-launch</li>
+          </ul>
+        </div>
+        <div class="card rm-card">
+          <span class="tag-badge tag-badge-gray"><span class="ring-mark"></span>NEXT</span>
+          <h3 class="rm-title">Post-launch</h3>
+          <div class="rm-date">12 months</div>
+          <ul class="rm-list">
+            <li>Scale sales and the agent toward the 1,000-company mark</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 12: Team -->
+  <section class="slide slide-gray" id="slide-12">
+    <div class="slide-inner">
+      <span class="pill">The Team</span>
+      <h1 class="h1">Built by an operator who's placed 15,000 people.</h1>
+      <div class="team-hero card">
+        <div class="team-hero-photo">
+          <img src="public/assets/photo-ayush.jpg" alt="Ayush, Founder">
+        </div>
+        <div class="team-hero-info">
+          <h2>Ayush</h2>
+          <div class="team-role">Founder</div>
+          <div class="tag-pills">
+            <span>Microsoft</span><span>BYJU'S</span><span>Unacademy</span><span>Relevel</span>
+          </div>
+          <hr class="bm-divider">
+          <ul class="dot-list">
+            <li>Founded <b>Naukri Ninja</b></li>
+            <li>Placed <b>15,000+ candidates</b> in 2 years</li>
+            <li>Built a profitable hiring business serving HDFC, upGrad, and Unacademy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-2 team-row2">
+        <div class="card team-simple">
+          <span class="icon-wrap icon-wrap-black"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+          <h3>Engineering team of 4</h3>
+          <p>Building the agent and verification stack</p>
+        </div>
+        <div class="card team-simple">
+          <span class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="10" r="3"/><path d="M7 19.4a5 5 0 0 1 10 0"/></svg></span>
+          <h3>Prashant Singhal</h3>
+          <div class="team-role-sm">Technical Advisor</div>
+          <p>Frontend Engineering Lead at <b>Commotion</b>, an AI-first omnichannel SaaS platform (51% stake acquired by Tata Communications for $25M). ~7 years building enterprise AI products.</p>
+        </div>
+      </div>
+      <div class="grid-3 team-row3">
+        <div class="card team-mini">
+          <img src="public/assets/photo-deepak.jpg" alt="Deepak Chitnis">
+          <div>
+            <h4>Deepak Chitnis</h4>
+            <div class="team-role-sm">Investor</div>
+            <div class="team-sub">Chief Officer, Lodha Group</div>
+          </div>
+        </div>
+        <div class="card team-mini">
+          <img src="public/assets/photo-rohit.jpg" alt="Rohit Rathi">
+          <div>
+            <h4>Rohit Rathi</h4>
+            <div class="team-role-sm">Investor</div>
+            <div class="team-sub">MD, Rohit's Logistics</div>
+          </div>
+        </div>
+        <div class="card team-mini">
+          <img src="public/assets/photo-hemant.jpg" alt="Hemant Chandak">
+          <div>
+            <h4>Hemant Chandak</h4>
+            <div class="team-role-sm">Advisor</div>
+            <div class="team-sub">17 years in consulting</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Dedicated functions across founder's office, tech, design, sales, marketing, and recruitment.</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 13: Fund -->
+  <section class="slide slide-white" id="slide-13">
+    <div class="slide-inner">
+      <span class="pill">GENESIS · 1:1 Matching Fund</span>
+      <h1 class="h1">Fund required: ₹30 Lakh<br><span class="text-muted-accent">matched 1:1 by GENESIS.</span></h1>
+      <div class="grid-2 fund-grid">
+        <div class="card card-black fund-card">
+          <div class="fund-label">ALREADY RAISED FROM INVESTORS</div>
+          <div class="fund-big">₹30L</div>
+          <div class="fund-rows">
+            <div class="fund-row"><span>Raised from investors</span><span>₹30L</span></div>
+            <div class="fund-row"><span>GENESIS 1:1 match requested</span><span>₹30L</span></div>
+            <hr class="bm-divider">
+            <div class="fund-row fund-total"><span>Total deployed</span><span>₹60L</span></div>
+          </div>
+          <ul class="check-list">
+            <li><span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Rohit Rathi</li>
+            <li><span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Deepak Chitnis</li>
+          </ul>
+        </div>
+        <div class="card fund-card-right">
+          <h3 class="use-title">₹ Use of funds</h3>
+          <div class="donut-row">
+            <svg class="donut" viewBox="0 0 42 42">
+              <circle class="donut-ring" cx="21" cy="21" r="15.9" fill="transparent" stroke="#f1f1f1" stroke-width="7"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#0a0a0a" stroke-width="7"
+                stroke-dasharray="30 70" stroke-dashoffset="25" transform="rotate(-90 21 21)"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#ff5b1f" stroke-width="7"
+                stroke-dasharray="55 45" stroke-dashoffset="-5" transform="rotate(-90 21 21)"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#1fb6a6" stroke-width="7"
+                stroke-dasharray="10 90" stroke-dashoffset="-60" transform="rotate(-90 21 21)"></circle>
+              <circle cx="21" cy="21" r="15.9" fill="transparent" stroke="#0f5c56" stroke-width="7"
+                stroke-dasharray="5 95" stroke-dashoffset="-70" transform="rotate(-90 21 21)"></circle>
+            </svg>
+            <div class="legend">
+              <div class="legend-row"><span class="legend-dot" style="background:#0a0a0a"></span>Product &amp; AI development<span class="legend-pct">30%</span></div>
+              <div class="legend-row"><span class="legend-dot" style="background:#ff5b1f"></span>Sales &amp; marketing<span class="legend-pct">55%</span></div>
+              <div class="legend-row"><span class="legend-dot" style="background:#1fb6a6"></span>Infrastructure &amp; ops<span class="legend-pct">10%</span></div>
+              <div class="legend-row"><span class="legend-dot" style="background:#0f5c56"></span>Buffer / runway<span class="legend-pct">5%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="footline">We've raised ₹30 Lakh from investors and are asking GENESIS to match it 1:1. <span class="text-strong">Every matched rupee goes into the agent, verification, and sales to reach launch.</span></p>
+    </div>
+  </section>
+
+  <!-- SLIDE 14: Recognized by -->
+  <section class="slide slide-gray" id="slide-14">
+    <div class="slide-inner supporters">
+      <div class="supporters-label">RECOGNIZED &amp; SUPPORTED BY</div>
+      <div class="supporters-grid">
+        <div class="logo-card"><img src="public/assets/logo-aws.png" alt="AWS Startups"></div>
+        <div class="logo-card"><img src="public/assets/logo-nvidia.png" alt="NVIDIA Inception Program"></div>
+        <div class="logo-card"><img src="public/assets/logo-startupindia.png" alt="Startup India"></div>
+        <div class="logo-card"><img src="public/assets/logo-stpi.png" alt="STPI"></div>
+        <div class="logo-card google-card">
+          <svg width="26" height="26" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.4 29.3 35 24 35c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 8 3l6-6C34.5 4.5 29.6 2.5 24 2.5 11.8 2.5 2 12.3 2 24.5s9.8 22 22 22 22-9.8 22-22c0-1.4-.1-2.7-.4-4z"/><path fill="#FF3D00" d="M6.3 14.5l6.6 4.8C14.7 15.9 19 13 24 13c3.1 0 5.8 1.1 8 3l6-6C34.5 6.5 29.6 4.5 24 4.5c-7.7 0-14.4 4.4-17.7 10z"/><path fill="#4CAF50" d="M24 46.5c5.4 0 10.4-2.1 14.1-5.4l-6.5-5.5C29.5 37.3 26.9 38 24 38c-5.3 0-9.7-3.4-11.3-8.1l-6.6 5.1c3.3 6.5 10 11 17.9 11z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4-4 5.4l6.5 5.5C39.8 37.4 44 32 44 24.5c0-1.4-.1-2.7-.4-4z"/></svg>
+          <span>Google for Startups</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 15: Closing -->
+  <section class="slide slide-white" id="slide-15">
+    <div class="slide-inner closing">
+      <h1 class="h1 center-only">What do you think?</h1>
+      <p class="lede-sm">Your feedback helps us understand your interest level</p>
+      <div class="contact-row">
+        <a class="contact-pill" href="tel:+918319928850"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +91 83199 28850</a>
+        <a class="contact-pill" href="mailto:ayush@syncup.in"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2 7 12 13 22 7"/></svg> ayush@syncup.in</a>
+      </div>
+      <div class="grid-4 feedback-grid">
+        <div class="card fb-card">
+          <span class="icon-wrap-bare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12"/><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"/></svg></span>
+          <h3>Very Interested</h3>
+          <p>Let's schedule a meeting</p>
+        </div>
+        <div class="card fb-card">
+          <span class="icon-wrap-bare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+          <h3>Need More Info</h3>
+          <p>Send me additional details</p>
+        </div>
+        <div class="card fb-card">
+          <span class="icon-wrap-bare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></span>
+          <h3>Sharing Internally</h3>
+          <p>Great deck - will discuss with team</p>
+        </div>
+        <div class="card fb-card">
+          <span class="icon-wrap-bare"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+          <h3>Follow Up Later</h3>
+          <p>Good potential - not right now</p>
+        </div>
+      </div>
+      <hr class="closing-rule">
+      <p class="closing-line">Building the future of professional capability.</p>
+      <div class="closing-brand">SYNCUP</div>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
